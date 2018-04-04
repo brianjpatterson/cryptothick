@@ -16,5 +16,10 @@
 
 #gameBoard tr td {
     width: 12%;
+    height: 77px;
     border: solid 1px blue;
 }
+
+td.white {}
+td.black{}
+
