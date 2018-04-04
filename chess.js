@@ -3,7 +3,7 @@
         
        var gameUI = initUI();
         
-       
+       alert("het");
     });
     
     function initUI() {
