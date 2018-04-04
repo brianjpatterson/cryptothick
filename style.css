@@ -19,9 +19,9 @@
     width: 12%;
     height: 77px;
     border: solid 1px blue;
-    background-color: blue;
+    
 }
 
-td.white {}
-td.black{}
+td.white {background-color: #fff;}
+td.black{background-color: #000;}
 
