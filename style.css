@@ -8,3 +8,13 @@
     width: 100%;
     border: solid 1px red;
 }
+
+#gameBoard tr {
+    width: 100%;
+    border: solid 1px green;
+}
+
+#gameBoard tr td {
+    width: 12%;
+    border: solid 1px blue;
+}
