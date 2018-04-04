@@ -20,7 +20,7 @@
         for(i=0; i<8; i++){
             var row = $("<tr>");
             for(j=0;j<8;j++){
-                var cls = j%2===0 ? "black" : "white";
+                var cls = j%2!==0 ? "black" : "white";
                 var cell = $('<td>').addClass(cls);
                 row.append(cell);
             }
