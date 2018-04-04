@@ -22,7 +22,7 @@
             var row = $("<tr>");
             offset = offset === true ? false : true;
             for(j=0;j<8;j++){
-                var cls = j%2!==0 ? 
+                var cls = j%2===0 ? 
                            (offset ? "black" : "white"):
                            (offset ? "white" : "black");
                 var cell = $('<td>').addClass(cls);
