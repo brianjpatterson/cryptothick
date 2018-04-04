@@ -1,0 +1,10 @@
+#content {
+    width: 100%;
+    min-height: 600px;
+    border: solid 1px black;
+}
+
+#gameBoard {
+    width: 100%;
+    border: solid 1px red;
+}
