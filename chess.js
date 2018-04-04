@@ -16,11 +16,13 @@
     };
     
     function drawBoard(e) {
-      
+        
+        var offset = false;
         for(i=0; i<8; i++){
             var row = $("<tr>");
+            offset = offset === true ? false : true;
             for(j=0;j<8;j++){
-                var cls = j%2!==0 ? "black" : "white";
+                var cls = (j%2!==0 && offset) ? "black" : "white";
                 var cell = $('<td>').addClass(cls);
                 row.append(cell);
             }
