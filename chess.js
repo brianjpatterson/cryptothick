@@ -45,7 +45,7 @@
        
        this.game = new this.Game(e);
        
-       return ui;
+       return this;
     
     };
     
