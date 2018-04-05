@@ -14,9 +14,9 @@
                UserInterface.o = this;
            }
            this._e = e;
-           this.data = new Data();
+           this._d = new Data();
            this.game = new Game();
-           this.board = this.game.drawboard(this._e, this.data);
+           this.board = this.game.drawboard(this._e, this._d);
            
        } else {
            obj = new UserInterface();
