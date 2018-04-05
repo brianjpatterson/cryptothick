@@ -7,10 +7,19 @@
     
     function UserInterface(e) {
     
-       this.Game = function(e) {
+       
+           this.game = new Game(e);
+        
+        return this;
            
-           var self = this;
-           
+           };
+    
+    function Game(e) {
+    
+        
+        
+           var parent = this;
+    
            this.data = {
                "cols" : ["a","b","c","d","e","f"."g","h"],
                "rows" : [1,2,3,4,5,6,7,8]
@@ -20,6 +29,7 @@
            
            this.drawBoard = function(e) {
                
+               this.parent = parent;
                var offset = false;
                for(i=0; i<8; i++){
                    
@@ -32,7 +42,7 @@
                            (offset ? "black" : "white"):
                            (offset ? "white" : "black");
                        var cell = $('<td>').addClass(cls);
-                       var id = self.data.cols[i] + self.data.rows[j].toString();
+                       var id = this.parent.data.cols[i] + this.parent.data.rows[j].toString();
                        alert(id+"id");
                        cell.attr("id",id);
                        row.append(cell);
@@ -41,9 +51,9 @@
                }
                return e;
            }
-       }
        
-       this.game = new this.Game(e);
+       
+       
        
        return this;
     
