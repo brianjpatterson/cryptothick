@@ -33,7 +33,7 @@
                            (offset ? "white" : "black");
                        var cell = $('<td>').addClass(cls);
                        var id = self.data.cols[i] + self.data.rows[j].toString();
-                       alert(id+"id);
+                       alert(id+"id");
                        cell.attr("id",id);
                        row.append(cell);
                    }
