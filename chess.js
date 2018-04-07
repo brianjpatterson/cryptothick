@@ -7,13 +7,10 @@
     
     function UserInterface(e) {
    
-       var obj, ret;
-
-       if (this instanceof UserInterface) {
-           if(undefined == UserInterface.o) {
-               UserInterface.o = this;
-           }
-           this._e = e;
+      
+       
+       
+       
            this.cols = ["a","b","c","d","e","f"."g","h"];
            this.rows = ["1","2","3","4","5","6","7","8"]; 
            
@@ -37,18 +34,12 @@
                        cell.attr("id",id);
                        row.append(cell);
                    }
-                   this._e.append(row);
+                   //this._e.append(row);
                }
-               return this._e;
+              // return this._e;
            }
            
-       } else {
-           obj = new UserInterface();
-           ret = UserInterface.apply(obj, arguments);
-           return ret === undefined ? obj : ret;
-       }
-       
-       return UserInterface.o;
+ 
     };
     
   
