@@ -29,10 +29,10 @@
                            (offset ? "black" : "white"):
                            (offset ? "white" : "black");
                        var cell = $('<td>').addClass(cls);
-                       var id = this.cols[i] + this.rows[j];
+                       //var id = this.cols[i] + this.rows[j];
                       
-                       cell.attr("id",id);
-                       row.append(cell);
+                      // cell.attr("id",id);
+                       //row.append(cell);
                    }
                    //this._e.append(row);
                }
