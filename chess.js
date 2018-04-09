@@ -1,11 +1,12 @@
 (function ($) {
     $(function () {  //document.ready
         
-       var ui = new UserInterface($("#gameBoard"));
+       var ui = new UserInterface();
+       var e = ui.board($("#gameBoard"));
        
     });
     
-    function UserInterface(e) {
+    function UserInterface() {
    
       
        
@@ -14,8 +15,8 @@
            this.cols = ["a","b","c","d","e","f"."g","h"];
            this.rows = ["1","2","3","4","5","6","7","8"]; 
            
-           this.board = function() {
-               alert("gfgh");
+           this.board = function(e) {
+               
               
                var offset = false;
                for(i=0; i<8; i++){
@@ -32,11 +33,11 @@
                        //var id = this.cols[i] + this.rows[j];
                       
                       // cell.attr("id",id);
-                       //row.append(cell);
+                       row.append(cell);
                    }
-                   //this._e.append(row);
+                  e.append(row);
                }
-              // return this._e;
+              return e;
            }
            
  
