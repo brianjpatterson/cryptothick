@@ -32,7 +32,7 @@
                        var cell = $('<td>').addClass(cls);
                        var id = c[i] + r[j];
                       
-                      cell.attr("id",id);
+                //      cell.attr("id",id);
                        row.append(cell);
                    }
                   e.append(row);
