@@ -33,6 +33,8 @@
                        var id = c[i] + r[j];
                       
                     cell.attr("id",id);
+                       var tid = cell.attr("id");
+                       cell.innerHTML = tid;
                        row.append(cell);
                    }
                   e.append(row);
