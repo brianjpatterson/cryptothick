@@ -4,7 +4,9 @@
        var ui = new UserInterface();
        var e = ui.board($("#gameBoard"));
        
-       
+       $("td").on("click", function(){
+           alert(this.attr("id");
+           });
     });
     
     function UserInterface() {
@@ -34,7 +36,7 @@
                       
                     cell.attr("id",id);
                      //  var tid = cell.attr("id");
-                       cell.innerHTML = "tte";
+                     //  cell.innerHTML = "tte";
                        row.append(cell);
                    }
                   e.append(row);
