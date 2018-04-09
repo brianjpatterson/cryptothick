@@ -1,12 +1,6 @@
 (function ($) {
     $(function () {  //document.ready
         
-        
-         
-       
-        var c = ["a","b","c","d","e","f"."g","h"];
-         var r = ["1","2","3","4","5","6","7","8"]; 
-           
        var ui = new UserInterface();
        var e = ui.board($("#gameBoard"),r,c);
        
@@ -18,6 +12,12 @@
            this.board = function(e, r, c) {
                
               
+        
+         
+       
+        var c = ["a","b","c","d","e","f","g","h"];
+         var r = ["1","2","3","4","5","6","7","8"]; 
+           
                var offset = false;
                for(i=0; i<8; i++){
                    
@@ -30,9 +30,9 @@
                            (offset ? "black" : "white"):
                            (offset ? "white" : "black");
                        var cell = $('<td>').addClass(cls);
-                //       var id = c[i] + r[j];
+                       var id = c[i] + r[j];
                       
-                //      cell.attr("id",id);
+                    cell.attr("id",id);
                        row.append(cell);
                    }
                   e.append(row);
