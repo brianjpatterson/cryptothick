@@ -2,14 +2,14 @@
     $(function () {  //document.ready
         
        var ui = new UserInterface();
-       var e = ui.board($("#gameBoard"),r,c);
+       var e = ui.board($("#gameBoard"));
        
        
     });
     
     function UserInterface() {
    
-           this.board = function(e, r, c) {
+           this.board = function(e) {
                
               
         
