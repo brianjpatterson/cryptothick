@@ -1,21 +1,21 @@
 (function ($) {
     $(function () {  //document.ready
         
+        
+         
+       
+        var c = ["a","b","c","d","e","f"."g","h"];
+         var r = ["1","2","3","4","5","6","7","8"]; 
+           
        var ui = new UserInterface();
-       var e = ui.board($("#gameBoard"));
+       var e = ui.board($("#gameBoard"),r,c);
+       
        
     });
     
     function UserInterface() {
    
-      
-       
-       
-       
-        var c = ["a","b","c","d","e","f"."g","h"];
-           //this.rows = ["1","2","3","4","5","6","7","8"]; 
-           
-           this.board = function(e) {
+           this.board = function(e, r, c) {
                
               
                var offset = false;
@@ -30,9 +30,9 @@
                            (offset ? "black" : "white"):
                            (offset ? "white" : "black");
                        var cell = $('<td>').addClass(cls);
-                       //var id = this.cols[i] + this.rows[j];
+                       var id = c[i] + r[j];
                       
-                      // cell.attr("id",id);
+                      cell.attr("id",id);
                        row.append(cell);
                    }
                   e.append(row);
