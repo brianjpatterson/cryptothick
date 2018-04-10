@@ -36,7 +36,7 @@
                       
                     cell.attr("id",id);
                      //  var tid = cell.attr("id");
-                     //  cell.innerHTML = "tte";
+                     cell.text("tte");
                        row.append(cell);
                    }
                   e.append(row);
